@@ -131,7 +131,7 @@ body {
   height: 100%;
 }
 .card-img-top {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .img-cover {
   object-fit: contain;

@@ -23,13 +23,15 @@
     <link rel="stylesheet" href="style.css" />
   <link rel="import" href="modal1.html">
   </head>
-  <body>
+  <body onload="myFunction()">
+  
+
     
     <div class="header-style container-fluid navbar navbar-nav">
       <div class="navbar-brand">Baby & Kids Clothes</div>
     </div>
     <div class="alert alert-secondary" role="alert">
-      <div class="txt-alert">New Arrival on December 2021, check it out</div>
+      <div class="txt-alert" id="alert">New Arrival on December 2021, check it out</div>
     </div>
     <!-- Hero -->
     <div class="row hero">
@@ -92,17 +94,16 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" ><a href="#" style="text-decoration: none">Home</a></li>
-        <li class="breadcrumb-item" ><a href="#" style="text-decoration: none">Baby</a></li>
+        <li class="breadcrumb-item"  ><a href="#" style="text-decoration: none">Home</a></li>
+        <li class="breadcrumb-item"  ><a href="#" style="text-decoration: none">Baby</a></li>
         <li class="breadcrumb-item active" aria-current="page">0-24m</li>
       </ol>
     </nav>    
     <div class="card-baby1">
-      .
       <div class="card" style="width: 18rem;">
         <img style="border-radius: 15%;" src="https://cdn.shopify.com/s/files/1/0672/6617/products/Paw_Kimono_Jumpsuit_brown_01_1_1000x1000.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Baby Brown Jumper</h5>
+          <h5 class="card-title" id="card-title">Baby Brown Jumper</h5>
           <h6>Rp. 50.000</h6>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Preview</button>
         </div>
@@ -173,7 +174,7 @@
     <div class="card-kids">
       <div class="card" style="width: 18rem;">
         <div class="img-wrapper" style="height: 300px;">
-          <img style="border-radius: 15%;" src="https://m.media-amazon.com/images/I/61XZ+J3HCML._AC_UX569_.jpg" class="card-img-top" alt="...">
+          <img style="border-radius: 15%;" class="img-cover" src="https://m.media-amazon.com/images/I/61XZ+J3HCML._AC_UX569_.jpg" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
           <h5 class="card-title">Yellow Tshirt</h5>
@@ -262,6 +263,11 @@
     </div>
   </div>
 
-
-  </body>
+  <!-- <script src="ext.js">
+    document.getElementById("alert").style.color ="blue"
+  </script> -->
+  <script src="ext.js"> </script>
+</body>
+ 
+  
 </html>
